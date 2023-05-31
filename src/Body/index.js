@@ -7,19 +7,16 @@ import "./body.scss";
 function Body() {
 	return (
 		<Tabs
-			defaultActiveKey="profile"
+			defaultActiveKey="now"
 			id="fill-tab-example"
 			className="mb-3"
 			fill
 		>
-			<Tab eventKey="home" title="Home">
-				<TimeSelector id="home" /> <Map />
+			<Tab eventKey="now" title="Now">
+				<TimeSelector id="now" /> <Map />
 			</Tab>
-			<Tab eventKey="profile" title="Profile">
-				<TimeSelector id="profile" /> <Map />
-			</Tab>
-			<Tab eventKey="longer-tab" title="Loooonger Tab">
-				<TimeSelector id="longer" /> <Map />
+			<Tab eventKey="forecast" title="Forecast">
+				<TimeSelector id="forecast" /> <Map />
 			</Tab>
 		</Tabs>
 	);
